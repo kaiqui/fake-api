@@ -34,12 +34,6 @@ spec:
   selector:
     matchLabels:
       app: fake-api
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      # ⚠️  maxSurge = 0 + maxUnavailable = 0  →  rollout fica travado (inválido)
-      maxSurge: 0
-      maxUnavailable: 0
   template:
     metadata:
       labels:
@@ -48,7 +42,7 @@ spec:
     spec:
       containers:
         - name: fake-api
-          image: kaiqui/fake-api:latest
+          image: kailima/fake-api:latest
           # ⚠️  imagePullPolicy: Always em prod gera latência no startup
           #     e pode falhar se o registry estiver indisponível
           imagePullPolicy: Always

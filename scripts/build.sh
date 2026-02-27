@@ -3,7 +3,7 @@ set -euo pipefail
 
 # ─── Config ───────────────────────────────────────────────────────────────────
 APP_NAME="fake-api"
-REGISTRY="kaiqui"
+REGISTRY="kailima"
 IMAGE="${REGISTRY}/${APP_NAME}"
 
 # ─── Version ──────────────────────────────────────────────────────────────────
