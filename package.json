@@ -1,0 +1,14 @@
+{
+  "name": "fake-api",
+  "version": "1.0.0",
+  "description": "Fake but functional REST API for demos and testing",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  }
+}
